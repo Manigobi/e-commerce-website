@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link
+rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>E-commers Web Site</title>
+</head>
+<body>
+    <div class="banner">
+<div class="navbar">
+<img   id="logo"src="logo3.png" class="logo1">
+</div>
+<div id="sideNav">
+
+<nav>
+  <ul>
+
+    <li><a href="#"id="menu">HOME</a></li>
+    <li><a href="#"id="menu">PRODUCTS</a></li>
+    <li><a href="#"id="menu">ABOUT</a></li>
+    <li><a href="#"id="menu">HELP</a></li>
+    
+</ul>
+
+</nav>
+</div>
+<div id="menu_bar">
+  <img src="menu.png" id="menu">
+</div>
+<script>
+
+var menu_bar= document.getElementById("menu_bar")
+var sideNav= document.getElementById("sideNav")
+var menu= document.getElementById("menu")
+
+sideNav.style.right="-250px";
+
+menu_bar.onclick =function(){
+if(sideNav.style.right=="-250px"){
+  sideNav.style.right="0"
+  menu.src="closeicon.png";
+  
+}
+else {
+  sideNav.style.right="-250px";
+  menu.src="menu.png";
+}
+
+}
+</script>
+
+
+<div class="container">
+
+<h1>E-COMMERS PLATFORM</h1>
+<p>Easy To Buy Low Cost Tech products </p>
+<div>
+<button type="button"> <span></span> Add Products</button>
+<button type="button"><span></span> view products</button>
+
+</div>
+
+
+    
+    </form>
+</div>
+</div>
+<div class="center_body">
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+
+
+
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  
+    
+  </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+
+const swiper = new Swiper('.swiper', {
+  
+  autoplay:{
+    deley:3000,
+    disableOnInteraction : false,
+ },
+
+  loop: true,
+
+pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+</script>
+
+</body>
+</html>
